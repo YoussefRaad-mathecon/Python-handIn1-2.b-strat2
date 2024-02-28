@@ -60,7 +60,6 @@ for i in range(2, Nhedge + 1):
     b = -a * St
     c = Vpf - a * St * Xt - b * Xt
 
-# Plotting
 plt.figure(figsize=(10, 6))
 plt.scatter(St, Vpf, c="blue", s=2, label='Hedge values')
 plt.plot(np.arange(0, max(St), 5000), Y0 * np.maximum(K - np.arange(0, max(St), 5000), 0), 'k-', linewidth=3, label='Pay-off')
